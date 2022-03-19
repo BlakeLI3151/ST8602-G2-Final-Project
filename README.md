@@ -3,11 +3,11 @@ The Final Project of ST8602 Group 2
 
 Project Proposal Analysis Worksheet
  
-Innovative Solutions Using AI and Cloud Technology
+## Innovative Solutions Using AI and Cloud Technology
  
  
- 
-##Topics – The “What”:
+### Topics – The “What”:
+
 
 Information cocoon detector. Information cocoon is a phenomenon which people tend to receive the same group of information due to the recommendation algorithms. 
 
@@ -17,7 +17,7 @@ Information cocoon detector. Information cocoon is a phenomenon in which people 
 The application is intended to help analyze users' reading history to help them find out if they are trapped inside a specific cocoon without being aware of it and provide them with advice and recommendation on other materials and information in other areas.
 By approval of collecting data, the app can also be used as a statistical tool to create an analysis chart to illustrate the main focus of the current society and the trend of the reading chosen by the public.
 
-##Design Considerations:
+### Design Considerations:
  
  It has two main aspects: users and texts. 
 For texts, our service has two functions:
@@ -39,26 +39,25 @@ For users, our service has two functions:
 
 
 
-##Overall Solution:
+### Overall Solution:
 
 Users could use our solution as an add-on service. By extracting the texts on the page, our solution will analyze and categorize them in order to detect .If most files are detected to be categorized into the same group, then there is a high possibility that the user has been trapped in the information cocoon. We will then try to compare the groups and return a list of news from the corresponding opposite and neutral groups.
 
-1.       Use Machine Learning Model to categorize the user into different groups based on their daily reading materials.
-2.       Construct a web interface to allow user find out the result them self.
+1. Use Machine Learning Model to categorize the user into different groups based on their daily reading materials.
+2. Construct a web interface to allow user find out the result them self.
 
 
-##Topics – The “Why”:
+### Topics – The “Why”:
 
 The recommendation algorithms has trapped people to repeatedly received and devour the same group of resources everyday, hard to jump out of the cocoon and discover the things they may be interested in but never got the chance to do so.
 
-1.
-Raising concerns about propaganda, fake news, calling for rational thinking, refusal to labeling
-  2.
-People seem to be curious to know what labels they belong to, e.g., Spotify year review, …
-Even if they don’t mind being labeled, many of them may have the interest to discover what they look like in others’ opinion.
-3. Provide the user with a border view of their thoughts and provide suggestions on other fields. People may be interested in the fields which they have never mentioned or viewed before.
+1. Raising concerns about propaganda, fake news, calling for rational thinking, refusal to labeling
+2. People seem to be curious to know what labels they belong to, e.g., Spotify year review, …
+   Even if they don’t mind being labeled, many of them may have the interest to discover what they look like in others’ opinion.
+3. Provide the user with a border view of their thoughts and provide suggestions on other fields. People may be interested in the fields 
+   which they have never mentioned or viewed before.
 
-##Implementation Considerations:
+### Implementation Considerations:
 
 The main procedures are similar to recommendation, but the spirit inside is reversed.
 
@@ -71,11 +70,17 @@ It also has the potential to be evolved in TV and radio broadcasts.
 
 
 
-##Source
+### Source
 https://www.kaggle.com/code/vijju6/politicians-social-media-posts/data
 https://deepblue.lib.umich.edu/data/concern/file_sets/3r074t98m
 https://academic.oup.com/poq/article/80/S1/250/2223443?login=false
 https://arxiv.org/abs/2109.00024
 https://www.kaggle.com/datasets/patthoo/data-analysis-challenge-classifying-news-articles
 https://arxiv.org/abs/2105.11910
+
+### Link to Proposal Document 
+https://docs.google.com/document/d/1Uql-GE4_SSQBIQyAumLwCo7JmcJWAhMgr1QTAVl2GRE/edit
+### Link to Final Report 
+https://docs.google.com/document/d/1NETsxAI2OlrDNVQ1IXFpR98O9jcIppn45x7msjO896I/edit#
+
  
