@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+    <title>Information Cocoon Detector</title>
+</head>
+<body>
+    <div class="headline">
+        <hr>
+        <h1>INFORMATION COCOON DETECTOR</h1>
+        <p>¿Are you in an information cocoon?</p>
+        <hr>
+    </div>
+    <div class="coverResult">
+        <h1>-Your result is-</h1>
+        <h3>The articles you are browsing are mostly ({{overview[0]}}) {{overview[1]}}.</h3>
+        <table class="table1">
+            <thead>
+                <th>Left</th>
+                <th>Neutral</th>
+                <th>Right</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{votingMap[0]}}</td>
+                    <td>{{votingMap[1]}}</td>
+                    <td>{{votingMap[2]}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h1>Detailed Information is as below:</h1>
+        <div class="coverTable2">
+            <table class="table2">
+                <thead>
+                    <th>URL</th>
+                    <th>Category</th>
+                    <th>Bias</th>
+                    <th>Level</th>
+                </thead>
+                <tbody>
+                    {%for result in results %}
+                        <tr class="detailContent">
+                            <td>{{result[0]}}</td>
+                            <td>{{result[1]}}</td>
+                            <td>{{result[4]}}</td>
+                            <td>{{result[3]}}</td>
+                        </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footage">
+        <h3>Is it biased? What am I reading all about? Try the detector now!</h3>
+        <br>
+        <p>DISCLAIMER: We value your privacy and do NOT save your personal information on our server for any purpose. Feel free to try anything you like.</p>
+    </div>
+    <button style="margin-left: 30%; margin-top:1.5%;" onclick="window.location.href='{{url_for('mainpage')}}';">Return to Try Again...</button>
+</body>
+</html>

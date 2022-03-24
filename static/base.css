@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.headline {
+    position: relative;
+    width: 100%;
+    background-color: rgb(162, 255, 170);
+    text-align: center;
+    font-size: x-large;
+    color: rgb(35, 56, 35);
+}
+.headline hr {
+    width: 100%;
+    border: 4px solid rgb(93, 223, 12);
+}
+.coverdiv {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 15%;
+}
+.inputdiv1 {
+    width: 30%;
+    height: 100%;
+    left: 10%;
+    top: 5%;
+    display: inline-block;
+    background-color: rgba(174, 201, 162, 0.394);
+    text-align: center;
+    position: absolute;
+    font-size: larger;
+    color: rgb(58, 90, 48);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    clear: both;
+    transition: 0.5s all;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.inputdiv1:hover {
+    width: 33%;
+    height: 110%;
+    transition: 0.5s all;
+}
+.inputdiv1 h2 {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.inputdiv1 textarea {
+    height: 70%;
+    width: 60%;
+    color: rgb(16, 17, 17);
+    font-weight: 700;
+    background-color: #28322713;
+    border: 2px solid rgb(86, 86, 86);
+    border-radius: 1%;
+    box-shadow: inset 1px 1px 15px 1px rgba(41, 52, 38, 0.387);
+}
+
+.inputdiv2 {
+    width: 30%;
+    height: 100%;
+    left: 60%;
+    top: 5%;
+    display: inline-block;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    position: absolute;
+    background-color: rgba(174, 201, 162, 0.394);
+    font-size: larger;
+    color: rgb(58, 90, 48);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    clear: both;
+    transition: 0.5s all;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.inputdiv2:hover {
+    left:57%;
+    width: 33%;
+    height: 110%;
+    transition: 0.5s all;
+}
+.inputdiv2 h2 {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.inputdiv2 textarea {
+    height: 70%;
+    width: 60%;
+    color: rgb(16, 17, 17);
+    font-weight: 700;
+    background-color: #28322713;
+    border: 2px solid rgb(86, 86, 86);
+    border-radius: 1%;
+    box-shadow: inset 1px 1px 15px 1px rgba(41, 52, 38, 0.387);
+}
+button {
+    position: inherit;
+    top: 85%;
+    left: 30%;
+    width: 40%;
+    height: 8%;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+button {
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(48, 138, 3, 0.095);
+    border: 0;
+    font-size: large;
+}
+button:hover {
+    transform: scale(1.2);
+    transition: 0.05s ease-in-out;
+    background: linear-gradient(-45deg, transparent 10px, rgba(13, 184, 4, 0.741) 0) right, linear-gradient(145deg, transparent 10px, rgba(13, 184, 4, 0.741) 0) left;
+    background-size: 50.007% 100%;
+    background-repeat: no-repeat;
+    color: #bbf0adde;
+}
+form {
+    width: 100%;
+    height: 100%;
+}
+
+/*background*/
+body { 
+    background-color: #9ee493;
+    background-image: /*Code Attributed from https://codepen.io/stevenlei/pen/ZEJxXGL. Thank you*/
+      radial-gradient(closest-side, rgb(214, 255, 242), rgba(154, 255, 231, 0)),
+      radial-gradient(closest-side, rgba(166, 255, 129, 0.646), rgba(210, 255, 187, 0)),
+      radial-gradient(closest-side, rgb(197, 255, 232), rgba(194, 255, 248, 0)),
+      radial-gradient(closest-side, rgb(192, 255, 199), rgba(223, 255, 204, 0)),
+      radial-gradient(closest-side, rgb(234, 255, 213), rgba(187, 255, 197, 0));
+    background-size: 
+      131vmax 131vmax,
+      81vmax 81vmax,
+      91vmax 91vmax,
+      112vmax 112vmax,
+      87vmax 87vmax;
+    background-position:
+      -81vmax -81vmax,
+      61vmax -32vmax,
+      11vmax 11vmax,
+      -29vmax -12vmax,
+      51vmax 51vmax;
+    background-repeat: no-repeat;
+    animation: 10s movement linear infinite;
+}
+@keyframes movement {
+        0%, 100% {
+          background-size: 
+            130vmax 130vmax,
+            80vmax 80vmax,
+            90vmax 90vmax,
+            110vmax 110vmax,
+            90vmax 90vmax;
+          background-position:
+            -80vmax -80vmax,
+            60vmax -30vmax,
+            10vmax 10vmax,
+            -30vmax -10vmax,
+            50vmax 50vmax;
+        }
+        25% {
+          background-size: 
+            100vmax 100vmax,
+            90vmax 90vmax,
+            100vmax 100vmax,
+            90vmax 90vmax,
+            60vmax 60vmax;
+          background-position:
+            -60vmax -90vmax,
+            50vmax -40vmax,
+            0vmax -20vmax,
+            -40vmax -20vmax,
+            40vmax 60vmax;
+        }
+        50% {
+          background-size: 
+            80vmax 80vmax,
+            110vmax 110vmax,
+            80vmax 80vmax,
+            60vmax 60vmax,
+            80vmax 80vmax;
+          background-position:
+            -50vmax -70vmax,
+            40vmax -30vmax,
+            10vmax 0vmax,
+            20vmax 10vmax,
+            30vmax 70vmax;
+        }
+        75% {
+          background-size: 
+            90vmax 90vmax,
+            90vmax 90vmax,
+            100vmax 100vmax,
+            90vmax 90vmax,
+            70vmax 70vmax;
+          background-position:
+            -50vmax -40vmax,
+            50vmax -30vmax,
+            20vmax 0vmax,
+            -10vmax 10vmax,
+            40vmax 60vmax;
+        }
+}
+
+.coverResult {
+  text-align: center;
+  color: #033e1e;
+}
+.coverResult hr {
+  height: 4px;
+  background-color: rgb(50, 50, 50);
+}
+.coverResult h1 {
+  margin: 1%;
+}
+
+thead {
+  background-color: green;
+}
+th{
+  font-weight: 500;
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+/* Works on Chrome, Edge, and Safari */
+.coverTable2::-webkit-scrollbar {
+  width: 10px;
+}
+/* Works on Firefox */
+.coverTable2 {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(47, 47, 56) rgba(8, 74, 2, 0.653);
+}
+
+.coverTable2::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.313);
+}
+
+.coverTable2::-webkit-scrollbar-thumb {
+  background-color: rgba(44, 164, 11, 0.659);
+  border-radius: 20px;
+  border: 3px solid rgba(83, 83, 83, 0);
+}
+
+.coverTable2 {
+  overflow-y: scroll;
+  width: 80%;
+  height: 150px;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.table2 {
+  width: 100%;
+  border: rgba(43, 175, 2, 0.85) 5px;
+  border-top: 0;
+  border-bottom: 0;
+  border-style: solid;
+  padding: 0;
+  text-align: center;
+  border-spacing: 0;
+}
+.table2 tr {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(73, 72, 72);
+  line-height: 3;
+  box-shadow: rgba(2, 130, 23, 0.544) 1px -6px 26px 0px; 
+  transition: 0.3s all;
+}
+.detailContent:hover {
+  background-color: #ffffff8d;
+  transform: scale(1.008);
+  box-shadow: rgba(2, 72, 11, 0.748) 1px -6px 30px 1px;
+  transition: 0.25s all;
+}
+.table1 {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: rgba(43, 175, 2, 0.85) 5px;
+  border-style: solid;
+  padding: 0;
+  text-align: center;
+  border-spacing: 0;
+}
+.table1 tr {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(73, 72, 72);
+  line-height: 3;
+  transition: 0.3s all;
+}
+
+
+
+.footage {
+  position: absolute;
+  top: 90%;
+  height: 9%;
+  width: 100%;
+  background-color: #9ee493;
+  border-top: 4px solid green;
+  border-bottom: 4px solid green;
+  text-align: center;
+}

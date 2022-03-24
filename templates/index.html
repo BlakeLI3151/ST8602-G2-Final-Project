@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='base.css')}}">-->
+    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+    <title>Information Cocoon Detector</title>
+</head>
+<body>
+    <div class="headline">
+        <hr>
+        <h1>INFORMATION COCOON DETECTOR</h1>
+        <p>¿Are you in an information cocoon?</p>
+        <hr>
+    </div>
+    <div class="coverdiv">
+        <div class="inputdiv1">
+            <h2>Input URLs</h2>
+            <form action="{{url_for('urlsubmit')}}" method="post">
+                <textarea name="text" placeholder="Input your URLs here..."></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div class="inputdiv2">
+            <h2>Input Text</h2>
+            <form action="{{url_for('textsubmit')}}" method="post">
+                <textarea name="text" placeholder="Input some text here..."></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <div class="footage">
+        <h3>Is it biased? What am I reading all about? Try the detector now!</h3>
+        <br>
+        <p>DISCLAIMER: We value your privacy and do NOT save your personal information on our server for any purpose. Feel free to try anything you like.</p>
+    </div>
+</body>
+</html>
